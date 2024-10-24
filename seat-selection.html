@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 style="color: rgb(0, 0, 0);">Bus Ticket Booking System</h1>
+    </div>
+    <!-- Seat selection form -->
+    <div id="seat-selection">
+        <form id="seat-selection-form" method="POST" action="/seat-selection">
+            <label for="busNo">Bus No:</label>
+            <input type="text" id="busNo" name="busNo" value="A42V34" readonly>
+
+            <label for="selectedSeats">Select Seats:</label>
+            <input type="text" id="selectedSeats" name="selectedSeats" placeholder="A1, A2, B3" required>
+
+            <button type="submit">Submit Seat Selection</button>
+        </form>
+    </div>
+</body>
+</html>

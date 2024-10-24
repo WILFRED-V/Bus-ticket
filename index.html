@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 style="color: rgb(0, 0, 0);">Bus Ticket Booking System</h1>
+    </div>
+    <!-- Bus search form -->
+    <div class="search-container">
+        <form id="bus-search-form" method="POST" action="/bus-search">
+            <label for="from">From:</label>
+            <select id="from" name="from" required>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Tanjore">Tanjore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+            </select>
+
+            <label for="to">To:</label>
+            <select id="to" name="to" required>
+                <option value="Tanjore">Tanjore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Search Buses</button>
+        </form>
+    </div>
+</body>
+</html>

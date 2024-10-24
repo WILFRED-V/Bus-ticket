@@ -1,0 +1,186 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.container, .search-container, .bus-results, .passenger-form, .confirmation-page {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #b6b6b6;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover, .search-container:hover, .bus-results:hover, .seat-selection:hover, .passenger-form:hover, .confirmation-page:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+#seat-selection {
+    margin-right: 5%;
+    margin-left: 35%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#passenger-details {
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#gender {
+    margin-right: 25%;
+    margin-left: 2%;
+    text-align: center;
+    max-width: 1100px;
+    padding-bottom: 1%;
+}
+
+#bus-results {
+    background-color: #afafaf;
+    padding: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Consistent spacing between form elements */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea, button, a {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input, select, textarea {
+    background-color: #fafafa;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+button, a {
+    background-color: #6c63ff;
+    color: rgb(22, 22, 22);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+button:hover, a:hover {
+    background-color: #5848c2;
+    box-shadow: 0 4px 12px rgba(88, 72, 194, 0.2);
+}
+
+#seat-selection {
+    background-color: #afafaf;
+    padding: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 30px;
+}
+
+
+
+.seat {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.seat:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+.seat.selected {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.seat.unavailable {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+a {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.header {
+    background-color: #6c757d;
+}
+
+
+.bus-item {
+    margin-right: 5%;
+    padding-right: 30%;
+    margin-left: 35%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#busNo {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+#selectedSeats {
+    margin-top: -1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+}
